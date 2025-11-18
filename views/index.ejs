@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazetionnaire – Gaze-Controlled Questionnaires</title>
+    <% if(locals.currentPage) {%>
+    <link rel="stylesheet" href="/style/<%= currentPage %>.css">
+    <% } %>
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="logo">
+            <div class="logo-icon" aria-hidden="true"></div>
+            <div>
+                <div class="logo-title">Gazetionnaire</div>
+                <div class="logo-sub">Gaze-controlled questionnaires</div>
+            </div>
+        </div>
+        <div class="tagline">
+            Designed for people with motor impairments ♿
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div>
+                <div class="hero-highlight">
+                    <span>Hands-free answering</span> · <span>Webcam only</span>
+                </div>
+                <h1 class="hero-title">
+                    The first <span>gaze-controlled questionnaire</span> on the web.
+                </h1>
+                <p class="hero-subtitle">
+                    Gazetionnaire lets participants answer surveys using only their eyes.
+                    No mouse, no keyboard—just gaze, dwell-time and gentle gaze gestures.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        ▶ Try demo question
+                    </button>
+                    <button class="btn-ghost">
+                        👩‍🔬 For researchers & clinicians
+                    </button>
+                </div>
+                <div class="hero-meta">
+                    Works in modern browsers · Uses webcam eye-tracking (e.g. GazeCloudAPI) ·
+                    Ideal for accessibility studies, HCI research and remote testing.
+                </div>
+            </div>
+
+            <!-- Visual preview card -->
+            <div class="hero-card" aria-hidden="true">
+                <div class="hero-card-header">
+                    <span>Live gaze preview</span>
+                    <span class="hero-chip">Dwell-time selection · 1.2s</span>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-label">Question 3 · Likert scale</div>
+                    <p class="question-text">
+                        How easy was it to answer this question <strong>using only your eyes</strong>?
+                    </p>
+
+                    <div class="options">
+                        <div class="option">
+                            <div class="option-dot"></div>
+                            Strongly disagree
+                        </div>
+                        <div class="option">
+                            <div class="option-dot"></div>
+                            Disagree
+                        </div>
+                        <div class="option is-target">
+                            <div class="option-dot"></div>
+                            Neutral
+                            <div class="gaze-ring"></div>
+                        </div>
+                        <div class="option">
+                            <div class="option-dot"></div>
+                            Agree
+                        </div>
+                        <div class="option">
+                            <div class="option-dot"></div>
+                            Strongly agree
+                        </div>
+                    </div>
+
+                    <div class="dwell-bar">
+                        <div class="dwell-bar-inner"></div>
+                    </div>
+                    <div class="dwell-label">
+                        <span>Gaze locked on “Neutral”</span>
+                        <span>Selection in 0.4 s</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section">
+            <h2>Built for accessibility, powered by eye-tracking.</h2>
+            <p>
+                Gazetionnaire combines webcam-based eye-tracking with carefully designed
+                questionnaires. You can mix multiple choice, Likert scales, yes/no questions
+                and even an on-screen keyboard controlled purely by gaze.
+            </p>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-label">Selection methods</div>
+                    <div class="feature-title">Dwell-time, smooth pursuit &amp; gaze gestures</div>
+                    <div class="feature-body">
+                        Compare three gaze-interaction techniques in one interface and log
+                        detailed metrics for each.
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-label">Question types</div>
+                    <div class="feature-title">Flexible questionnaire system</div>
+                    <div class="feature-body">
+                        Multiple choice, Likert scales, yes/no, and short text via on-screen keyboard –
+                        all controllable with eye movements.
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-label">Participants</div>
+                    <div class="feature-title">For motor-impaired &amp; able-bodied users</div>
+                    <div class="feature-body">
+                        Run studies with restrained-hands simulations and real users with motor impairments.
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-label">Analytics</div>
+                    <div class="feature-title">Per-option gaze statistics</div>
+                    <div class="feature-body">
+                        Track how long each answer is looked at, how often users switch, and which
+                        selection method feels most natural.
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-label">Web-based</div>
+                    <div class="feature-title">No installation needed</div>
+                    <div class="feature-body">
+                        Just send a link. Participants use their own webcam and browser – ideal for
+                        remote experiments.
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-label">Tech stack</div>
+                    <div class="feature-title">JavaScript + Eye-Tracking API</div>
+                    <div class="feature-body">
+                        Integrates with libraries like GazeCloudAPI and custom models. Your logic
+                        runs entirely in the browser.
+                    </div>
+                </article>
+            </div>
+
+            <div class="badge-row">
+                <span class="badge badge-soft">Prototype in progress</span>
+                <span class="badge">Ideal for Bachelor / Master thesis</span>
+                <span class="badge">HCI · Accessibility · Assistive Tech</span>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="section">
+            <h2>How it works (for participants)</h2>
+            <p>
+                Gazetionnaire keeps the setup simple so that participants can focus on the questions,
+                not the technology.
+            </p>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <strong>Give camera permission</strong><br>
+                    The browser asks for webcam access. Only the gaze data stays in the session;
+                    no video is stored.
+                </div>
+
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <strong>Quick gaze calibration</strong><br>
+                    Users follow a few points on the screen. The system learns how their eyes map
+                    to screen coordinates.
+                </div>
+
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <strong>Answer questions with your eyes</strong><br>
+                    Look at an option to highlight it. Keep your gaze to select (dwell),
+                    or confirm with a simple gaze gesture.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2025 Gazetionnaire · Prototype</span>
+        <span>Made for inclusive, gaze-first interaction on the web.</span>
+    </footer>
+</div>
+</body>
+</html>
